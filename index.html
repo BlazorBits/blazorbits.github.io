@@ -1,2 +1,25 @@
-<h1>BlazorBits</h1>
-<p>Woo</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Test Application</title>
+	<base href="/" />
+	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" data-name="vs/editor/editor.main" href="monaco-editor/min/vs/editor/editor.main.css">
+	<link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+	<app>Loading...</app>
+	<!--<script src="css/bootstrap/bootstrap-native.min.js"></script>-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>var require = { paths: { 'vs': 'monaco-editor/min/vs' } };</script>
+	<script src="monaco-editor/min/vs/loader.js"></script>
+	<script src="monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+	<script src="monaco-editor/min/vs/editor/editor.main.js"></script>
+	<script src="_framework/blazor.js" main="BlazorBits.Website.dll" entrypoint="BlazorBits.Website.Program::Main" references="BlazorBits.Monaco.dll,Microsoft.AspNetCore.Blazor.Browser.dll,Microsoft.AspNetCore.Blazor.dll,Microsoft.Extensions.DependencyInjection.Abstractions.dll,Microsoft.Extensions.DependencyInjection.dll,mscorlib.dll,netstandard.dll,System.Core.dll,System.dll,System.Net.Http.dll" linker-enabled="true"></script>
+<script src="_content/BlazorBits.Monaco/BlazorComponents.js" defer></script>
+	<script src="BlazorComponents.js"></script>
+</body>
+</html>
